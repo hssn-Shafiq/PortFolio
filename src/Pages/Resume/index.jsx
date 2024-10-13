@@ -9,7 +9,7 @@ function Resume() {
       <main className="main">
         <PageTitle
           title="Resume"
-          description="Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem."
+          description="Experience, Skills, and Achievements.! My Journey in Code and Marketing Strategy"
           current="Resume"
         />
 

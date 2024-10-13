@@ -5,8 +5,7 @@ function Footer() {
         <div className="container">
           <h3 className="sitename">Hassan Portfolio</h3>
           <p>
-            Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
-            eligendi fuga maxime saepe commodi placeat.
+          Full Stack Developer & Digital Marketer – Bridging Creativity and Code.
           </p>
           <div className="social-links d-flex justify-content-center">
             <a href="https://twitter.com/shafiqh850">
@@ -20,6 +19,12 @@ function Footer() {
             </a>
             <a href="https://www.linkedin.com/in/hassan-shafiq-847665248/">
               <i className="bi bi-linkedin" />
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B923205314850">
+              <i className="bi bi-whatsapp" />
+            </a>
+            <a href="https://github.com/hssn-Shafiq/">
+              <i className="bi bi-github" />
             </a>
           </div>
           <div className="container">

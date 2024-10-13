@@ -1,12 +1,14 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export const Header = () => {
+  const location = useLocation(); // Get current path
+
   useEffect(() => {
     function toggleScrolled() {
       const selectBody = document.querySelector("body");
       const selectHeader = document.querySelector("#header");
-      
-      // Ensure header exists and has correct class for sticky behavior
+
       if (
         selectHeader &&
         (selectHeader.classList.contains("scroll-up-sticky") ||
@@ -22,7 +24,6 @@ export const Header = () => {
     document.addEventListener("scroll", toggleScrolled);
     window.addEventListener("load", toggleScrolled);
 
-    // Cleanup scroll and load event listeners on component unmount
     return () => {
       document.removeEventListener("scroll", toggleScrolled);
       window.removeEventListener("load", toggleScrolled);
@@ -30,7 +31,6 @@ export const Header = () => {
   }, []);
 
   useEffect(() => {
-    // Ensure the mobile nav toggle button exists
     const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
 
     function mobileNavToogle() {
@@ -48,7 +48,6 @@ export const Header = () => {
       mobileNavToggleBtn.addEventListener("click", mobileNavToogle);
     }
 
-    // Hide mobile nav on same-page/hash links
     document.querySelectorAll("#navmenu a").forEach((navmenu) => {
       navmenu.addEventListener("click", () => {
         if (document.querySelector("body").classList.contains("mobile-nav-active")) {
@@ -57,7 +56,6 @@ export const Header = () => {
       });
     });
 
-    // Toggle mobile nav dropdowns
     document.querySelectorAll(".navmenu .toggle-dropdown").forEach((navmenu) => {
       navmenu.addEventListener("click", function (e) {
         e.preventDefault();
@@ -73,7 +71,6 @@ export const Header = () => {
       });
     });
 
-    // Cleanup on component unmount to avoid memory leaks
     return () => {
       if (mobileNavToggleBtn) {
         mobileNavToggleBtn.removeEventListener("click", mobileNavToogle);
@@ -87,6 +84,9 @@ export const Header = () => {
     };
   }, []);
 
+  // Function to determine if a link is active based on the current URL
+  const isActiveLink = (path) => location.pathname === path;
+
   return (
     <>
       <header id="header" className="header d-flex align-items-center fixed-top">
@@ -96,12 +96,54 @@ export const Header = () => {
           </a>
           <nav id="navmenu" className="navmenu">
             <ul>
-              <li><a href="/" className="active">Home</a></li>
-              <li><a href="/About">About</a></li>
-              <li><a href="/resume">Resume</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li>
+                <a
+                  href="/"
+                  className={isActiveLink("/") ? "active" : ""}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/About"
+                  className={isActiveLink("/About") ? "active" : ""}
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/resume"
+                  className={isActiveLink("/resume") ? "active" : ""}
+                >
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className={isActiveLink("/services") ? "active" : ""}
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/portfolio"
+                  className={isActiveLink("/portfolio") ? "active" : ""}
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  className={isActiveLink("/contact") ? "active" : ""}
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>

@@ -34,7 +34,7 @@ function Portfolio() {
       <main className="main">
         <PageTitle
           title="Portfolio"
-          description="Odio et unde deleniti. Deserunt numquam exercitationem."
+          description="Explore a selection of my past work that showcases my expertise in full-stack development and digital marketing."
           current="Portfolio"
         />
         {/* Portfolio Section */}

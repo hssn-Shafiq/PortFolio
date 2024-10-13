@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer";
 import { Header } from "../../Components/Header";
 import PageTitle from "../../Components/PageTitle";
@@ -9,7 +10,7 @@ function Services() {
       <main className="main">
         <PageTitle
           title="Services"
-          description="Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem."
+          description="Your Go-To Expert for Development and Digital Marketing. Offering a full spectrum of services to meet your business needs."
           current="Services"
         />
         <>
@@ -27,9 +28,9 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-code-slash" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>Web Development</h3>
-                    </a>
+                    </Link>
                     <p>
                       We create responsive, high-performance websites using the
                       latest technologies tailored to your business needs.
@@ -46,9 +47,9 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-palette" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>UI/UX Design</h3>
-                    </a>
+                    </Link>
                     <p>
                       Delivering intuitive and engaging designs that provide
                       seamless user experiences for your digital platforms.
@@ -65,9 +66,9 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-wordpress" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>WordPress Websites</h3>
-                    </a>
+                    </Link>
                     <p>
                       Expertly crafted WordPress websites with custom themes and
                       plugins for businesses, blogs, and e-commerce.
@@ -84,9 +85,9 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-shop" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>Shopify Store Design</h3>
-                    </a>
+                    </Link>
                     <p>
                       Build and optimize Shopify stores to help you drive sales
                       and create a seamless shopping experience for your
@@ -104,9 +105,9 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-window" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>WebFlow Development</h3>
-                    </a>
+                    </Link>
                     <p>
                       Design and develop stunning WebFlow websites that combine
                       design flexibility with powerful performance.
@@ -123,9 +124,9 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-bar-chart-line" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>Digital Marketing</h3>
-                    </a>
+                    </Link>
                     <p>
                       Increase your online presence with our digital marketing
                       services, including SEO, PPC, and social media management.
@@ -142,9 +143,9 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-link-45deg" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>API Development</h3>
-                    </a>
+                    </Link>
                     <p>
                       Build scalable APIs to integrate various platforms,
                       ensuring seamless data exchange across applications.
@@ -161,9 +162,9 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-book" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>University Projects</h3>
-                    </a>
+                    </Link>
                     <p>
                       Assisting students with well-structured and high-quality
                       academic projects, tailored to meet university
@@ -181,15 +182,19 @@ function Services() {
                     <div className="icon">
                       <i className="bi bi-code" />
                     </div>
-                    <a href="service-details.html" className="stretched-link">
+                    <Link to="javascript:void(0)" className="stretched-link">
                       <h3>Programming Tasks</h3>
-                    </a>
+                    </Link>
                     <p>
                       Solving complex programming tasks efficiently in various
                       languages, from Python to JavaScript, and more.
                     </p>
                   </div>
                 </div>
+                <div className="col-lg-12 text-center">
+               <a href="/Contact"> <button className="btn btn-primary custom_btn">Book a Service</button>
+               </a>
+              </div>
               </div>
             </div>
           </section>

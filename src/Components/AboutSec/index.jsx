@@ -9,7 +9,7 @@ function AboutSec() {
           <img src="/images/profile.png" className="img-fluid" alt="" />
         </div>
         <div className="col-lg-8 content">
-          <h2>Web Designer &amp; Mern Stack Developer.</h2>
+          <h2>Web Designer &amp; Full Stack Developer.</h2>
           <p className="fst-italic py-3">
             I am Hassan Shafiq, a full-stack developer and designer with
             experience building dynamic, user-friendly, and eye-catching
@@ -60,7 +60,7 @@ function AboutSec() {
           <p className="py-3">
             It is essentials to keep up with the latest technology in the ever
             changing field of web development. I keep up with market trends and
-            apply innovative techniques and technologies to your projects.
+            apply innovative techniques and technologies to your projects. From creating seamless user experiences to optimizing marketing campaigns, my mission is to bring innovative ideas to life through code and creativity.
           </p>
         </div>
       </div>

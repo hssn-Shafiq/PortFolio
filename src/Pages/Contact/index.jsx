@@ -39,9 +39,9 @@ function Contact() {
       setError("Failed to submit your request. Please try again.");
     } finally {
       setLoading(false);
-     setTimeout(() => {
+      setTimeout(() => {
         setSuccess(false);
-     }, 3000)
+      }, 3000);
     }
   };
   return (
@@ -50,7 +50,7 @@ function Contact() {
       <main className="main">
         <PageTitle
           title="Contact"
-          description="Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem."
+          description="Get in Touch – Let's Bring Your Vision to Life."
           current="Contact"
         />
 
@@ -82,7 +82,7 @@ function Contact() {
                     <i className="icon bi bi-telephone flex-shrink-0" />
                     <div>
                       <h3>Call Me</h3>
-                      <p>+92 320 5314850</p>
+                      <p><a href="tel:+923205314850">+92 320 5314850</a></p>
                     </div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ function Contact() {
                     <i className="icon bi bi-envelope flex-shrink-0" />
                     <div>
                       <h3>Email Us</h3>
-                      <p>shafiqh850@gmail.com</p>
+                      <p><a href="mailto:shafiqh850@gmail.com?subject=Request%20for%20Free%20Consultation%3A%20Let's%20Kickstart%20My%20Digital%20Project!&body=Hi%20Hassan%20Shafiq%2C%0A%0AI'm%20interested%20in%20your%20free%20web%20development%20and%20digital%20marketing%20consultation.%20I%E2%80%99d%20love%20to%20discuss%20my%20project%20and%20explore%20how%20your%20Full%20Stack%20Development%20and%20Digital%20Marketing%20expertise%20can%20help.%0A%0AI%20am%20looking%20forward%20to%20your%20response!">shafiqh850@gmail.com</a></p>
                     </div>
                   </div>
                 </div>
@@ -111,9 +111,6 @@ function Contact() {
                     <div>
                       <h3>Social Profiles</h3>
                       <div className="social-links">
-                        <a href="https://twitter.com/shafiqh850">
-                          <i className="bi bi-twitter-x" />
-                        </a>
                         <a href="https://www.facebook.com/hassan.shafiq.73744">
                           <i className="bi bi-facebook" />
                         </a>
@@ -122,6 +119,15 @@ function Contact() {
                         </a>
                         <a href="https://www.linkedin.com/in/hassan-shafiq-847665248/">
                           <i className="bi bi-linkedin" />
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B923205314850">
+                          <i className="bi bi-whatsapp" />
+                        </a>
+                        <a href="https://github.com/hssn-Shafiq/">
+                          <i className="bi bi-github" />
+                        </a>
+                        <a href="https://twitter.com/shafiqh850">
+                          <i className="bi bi-twitter-x" />
                         </a>
                       </div>
                     </div>
