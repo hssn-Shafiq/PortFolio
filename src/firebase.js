@@ -1,15 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+console.log("Api key is ", process.env.REACT_APP_FIREBASE_API_KEY);
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCw2d4iYQgRfbIn1hzPX0WChUcfL19NNbU",
-  authDomain: "hassan-portfolio-29d39.firebaseapp.com",
-  projectId: "hassan-portfolio-29d39",
-  storageBucket: "hassan-portfolio-29d39.appspot.com",
-  messagingSenderId: "1010629991412",
-  appId: "1:1010629991412:web:1e471ddb4c9913ad55b7a1",
-  measurementId: "G-NMJDLVDJ99"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
