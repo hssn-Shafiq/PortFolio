@@ -21,7 +21,7 @@ function Clients() {
             >
               <img
                 src="/images/Clients/Png6.png"
-                className="border border-1 border-secondary rounded-3  p-3"
+                
                 width="100%"
                 alt=""
               />
@@ -34,7 +34,7 @@ function Clients() {
             >
               <img
                 src="/images/Clients/Png7.png"
-                className="border border-1 border-secondary rounded-3  p-3"
+                
                 width="100%"
                 alt=""
               />
@@ -47,7 +47,7 @@ function Clients() {
             >
               <img
                 src="/images/Clients/Png3.png"
-                className="border border-1 border-secondary rounded-3  p-3"
+                
                 width="100%"
                 alt=""
               />
@@ -60,7 +60,6 @@ function Clients() {
             >
               <img
                 src="/images/Clients/Png8.jpg"
-                className="border border-1 border-secondary rounded-3 shadow p-3"
                 width="100%"
                 alt=""
               />
@@ -73,7 +72,6 @@ function Clients() {
             >
               <img
                 src="/images/Clients/Png1.png"
-                className="border border-1 border-secondary rounded-3 shadow p-3"
                 width="100%"
                 alt=""
               />
@@ -86,7 +84,7 @@ function Clients() {
             >
               <img
                 src="/images/Clients/Png2.png"
-                className="border border-1 border-secondary rounded-3  p-3"
+                
                 width="100%"
                 alt=""
               />
@@ -99,7 +97,7 @@ function Clients() {
             >
               <img
                 src="/images/Clients/Png4.png"
-                className="border border-1 border-secondary rounded-3  p-3"
+                
                 width="100%"
                 alt=""
               />
@@ -112,7 +110,7 @@ function Clients() {
             >
               <img
                 src="/images/Clients/Png5.png"
-                className="border border-1 border-secondary rounded-3  p-3"
+                
                 width="100%"
                 alt=""
               />
