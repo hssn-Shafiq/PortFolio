@@ -9,25 +9,27 @@ import Stats from "../../Components/Stats";
 import TestimonialSlider from "../../Components/TestimonialSlider";
 
 function About() {
-    return ( <>
-        <Header/>
-        <main className="main">
-            <PageTitle 
-            title="About"
-            description=" Are you looking for a flexible IT specialist to help you
+  return (
+    <>
+      <Header />
+      <main className="main">
+        <PageTitle
+          title="About"
+          description=" Are you looking for a flexible IT specialist to help you
                     improve your web presence and manage your online business
                     operations? Look no further."
-                    current="about"
-            />
-            <AboutSec/>
-            <Stats/>
-            <Skills/>
-            <ServicesCard />
-            <Clients/>
-            <TestimonialSlider/>
-            <Footer/>
-        </main>
-    </>  );
+          current="about"
+        />
+        <AboutSec />
+        <Stats />
+        <Skills />
+        <ServicesCard />
+        <Clients />
+        <TestimonialSlider />
+        <Footer />
+      </main>
+    </>
+  );
 }
 
 export default About;

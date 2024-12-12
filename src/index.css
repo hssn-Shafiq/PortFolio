@@ -804,6 +804,19 @@ section,
   line-height: 0;
 }
 
+.clients-logos{
+  aspect-ratio: 5/2;
+  /* object-fit: cover; */
+  width:200px;
+}
+.clients-logos-row{
+  row-gap: 20px;
+  justify-content: center;
+  
+}
+.clients-logo-box{
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
