@@ -67,11 +67,10 @@ function Services() {
                       <i className="bi bi-wordpress" />
                     </div>
                     <Link to="javascript:void(0)" className="stretched-link">
-                      <h3>WordPress Websites</h3>
+                      <h3>CMS Development</h3>
                     </Link>
                     <p>
-                      Expertly crafted WordPress websites with custom themes and
-                      plugins for businesses, blogs, and e-commerce.
+                      Expertly crafted CMS based applications by manually setup or with built-in features.
                     </p>
                   </div>
                 </div>
@@ -86,7 +85,7 @@ function Services() {
                       <i className="bi bi-shop" />
                     </div>
                     <Link to="javascript:void(0)" className="stretched-link">
-                      <h3>Shopify Store Design</h3>
+                      <h3>E-commerce Solutions</h3>
                     </Link>
                     <p>
                       Build and optimize Shopify stores to help you drive sales

@@ -75,10 +75,30 @@ function Resume() {
                   data-aos="fade-up"
                   data-aos-delay={200}
                 >
-                  <h3 className="resume-title">Mern Stack Developer</h3>
+                  <h3 className="resume-title">Experience</h3>
                   <div className="resume-item">
-                    <h4>Senior Mern Stack Developer</h4>
-                    <h5>2022 - 2024</h5>
+                    <h4>CMS & Full Stack Developer</h4>
+                    <h5>jul 2024 - Present</h5>
+                    <p>
+                      <em>
+                        Groom Your Life Agency, Karachi, Pakistan&lt;
+                      </em>
+                    </p>
+                    <ul>
+                      <li>
+                      Serving as CMS & Full Stack Developer at Groom Your Life (Remotly)...
+                      </li>
+                      <li>
+                       Collectively Working on different CMS like (WordPress, Shopify, Wix, ...).{" "}
+                      </li>
+                      <li>
+                       Working with Industries Experts in developing various innovative ideas to reality with new strategies
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="resume-item">
+                    <h4>Full Stack Developer</h4>
+                    <h5>Sep 2023 - Jun 2024</h5>
                     <p>
                       <em>
                         Codesinc Software House, Rahim Yar Khan, Pakistan&lt;
@@ -106,7 +126,7 @@ function Resume() {
                   {/* Edn Resume Item */}
                   <div className="resume-item">
                     <h4>Front-End Developer &amp; WordPress Developer</h4>
-                    <h5>2021 - 2022</h5>
+                    <h5>Dec 2021 - Jun 2024</h5>
                     <p>
                       <em>Codesinc Software House, Rahim Yar Khan, Pakistan</em>
                     </p>

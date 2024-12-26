@@ -24,7 +24,7 @@ function AboutSec() {
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />{" "}
-                  <strong>Website:</strong> <span>www.example.com</span>
+                  <strong>Website:</strong> <span>hassanshafiq.vercel.com</span>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" /> <strong>Phone:</strong>{" "}

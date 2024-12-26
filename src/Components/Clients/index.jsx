@@ -14,116 +14,134 @@ function Clients() {
         {/* End Section Title */}
         <div className="container">
           <div className="row clients-logos-row gy-4">
-            <div
-              className="col-lg-3 col-md-4 clients-logo-box"
+              {/* End Feature Item */}
+              <div
+              className="col-lg-2 col-md-4 clients-logo-box"
               data-aos="fade-up"
               data-aos-delay={100}
             >
               <img
-                src="/images/Clients/Png6.png"
-                
+                src="/images/Clients/Png11.png"
                 width="100%"
-                className ="clients-logos"
+                className="clients-logos"
+                alt=""
+              />
+            </div>
+            <div
+              className="col-lg-2 col-md-4 clients-logo-box"
+              data-aos="fade-up"
+              data-aos-delay={100}
+            >
+              <img
+                src="/images/Clients/Png5.png"
+                width="100%"
+                className="clients-logos"
                 alt=""
               />
             </div>
             {/* End Feature Item */}
             <div
-              className="col-lg-3 col-md-4 clients-logo-box"
+              className="col-lg-2 col-md-4 clients-logo-box"
               data-aos="fade-up"
               data-aos-delay={100}
             >
               <img
                 src="/images/Clients/Png7.png"
-                
                 width="100%"
-                className ="clients-logos"
+                className="clients-logos"
                 alt=""
               />
             </div>
             {/* End Feature Item */}
             <div
-              className="col-lg-3 col-md-4 clients-logo-box"
+              className="col-lg-2 col-md-4 clients-logo-box"
               data-aos="fade-up"
               data-aos-delay={100}
             >
               <img
                 src="/images/Clients/Png3.png"
-                
                 width="100%"
-                className ="clients-logos"
+                className="clients-logos"
                 alt=""
               />
             </div>
-            {/* End Feature Item */}
             <div
-              className="col-lg-3 col-md-4 clients-logo-box"
-              data-aos="fade-up"
-              data-aos-delay={100}
-            >
-              <img
-                src="/images/Clients/Png8.jpg"
-                width="100%"
-                className ="clients-logos"
-                alt=""
-              />
-            </div>
-            {/* End Feature Item */}
-            <div
-              className="col-lg-3 col-md-4 clients-logo-box"
+              className="col-lg-2 col-md-4 clients-logo-box"
               data-aos="fade-up"
               data-aos-delay={100}
             >
               <img
                 src="/images/Clients/Png1.png"
                 width="100%"
-                className ="clients-logos"
+                className="clients-logos"
                 alt=""
               />
             </div>
             {/* End Feature Item */}
             <div
-              className="col-lg-3 col-md-4 clients-logo-box"
+              className="col-lg-2 col-md-4 clients-logo-box"
               data-aos="fade-up"
               data-aos-delay={100}
             >
               <img
                 src="/images/Clients/Png2.png"
-                
                 width="100%"
-                className ="clients-logos"
+                className="clients-logos"
                 alt=""
               />
             </div>
             {/* End Feature Item */}
             <div
-              className="col-lg-3 col-md-4 clients-logo-box"
+              className="col-lg-2 col-md-4 clients-logo-box"
               data-aos="fade-up"
               data-aos-delay={100}
             >
               <img
                 src="/images/Clients/Png4.png"
-                
                 width="100%"
-                className ="clients-logos"
+                className="clients-logos"
                 alt=""
               />
             </div>
-            {/* End Feature Item */}
-            <div
-              className="col-lg-3 col-md-4 clients-logo-box"
+             {/* End Feature Item */}
+             <div
+              className="col-lg-2 col-md-4 clients-logo-box"
               data-aos="fade-up"
               data-aos-delay={100}
             >
               <img
-                src="/images/Clients/Png5.png"
-                
+                src="/images/Clients/Png8.png"
                 width="100%"
-                className ="clients-logos"
+                className="clients-logos"
                 alt=""
               />
             </div>
-            {/* End Feature Item */}
+             {/* End Feature Item */}
+             <div
+              className="col-lg-2 col-md-4 clients-logo-box"
+              data-aos="fade-up"
+              data-aos-delay={100}
+            >
+              <img
+                src="/images/Clients/Png9.png"
+                width="100%"
+                className="clients-logos"
+                alt=""
+              />
+            </div>
+             {/* End Feature Item */}
+             <div
+              className="col-lg-2 col-md-4 clients-logo-box"
+              data-aos="fade-up"
+              data-aos-delay={100}
+            >
+              <img
+                src="/images/Clients/Png10.png"
+                width="100%"
+                className="clients-logos"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>

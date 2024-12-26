@@ -13,13 +13,13 @@ function Home() {
         <Banner />
         {/* Services Section */}
         <section id="services" className="services section">
-        <div className="container section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <div>
-            {" "}
-            <span className="description-title">How I Can Help You?</span>
+          <div className="container section-title" data-aos="fade-up">
+            <h2>Services</h2>
+            <div>
+              {" "}
+              <span className="description-title">How I Can Help You?</span>
+            </div>
           </div>
-        </div>
           <div className="container">
             <div className="row gy-4">
               {/* Web Development */}
@@ -71,17 +71,21 @@ function Home() {
                     <i className="bi bi-wordpress" />
                   </div>
                   <Link to="javascript:void(0)" className="stretched-link">
-                    <h3>WordPress Websites</h3>
+                    <h3>CMS Development</h3>
                   </Link>
                   <p>
-                    Expertly crafted WordPress websites with custom themes and
-                    plugins for businesses, blogs, and e-commerce.
+                    Expertly crafted CMS based applications by manually setup or
+                    with built-in features.
                   </p>
                 </div>
               </div>
               <div className="col-lg-12 text-center">
-               <a href="/Services"> <button className="btn btn-primary custom_btn">View All</button>
-               </a>
+                <a href="/Services">
+                  {" "}
+                  <button className="btn btn-primary custom_btn">
+                    View All
+                  </button>
+                </a>
               </div>
             </div>
           </div>

@@ -1,0 +1,136 @@
+/* Portfolio Section Styles */
+.portfolio {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.portfolio .portfolio-flters {
+    padding: 0;
+    margin: 0 0 35px 0;
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio .portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #444444;
+    margin: 0 4px 8px 4px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-flters li:hover,
+.portfolio .portfolio-flters li.active {
+    color: #fff;
+    background: var(--accent-color);
+}
+
+.portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-wrap:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-wrap img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-wrap:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-info {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.portfolio-links {
+    text-align: center;
+}
+
+.portfolio-links a {
+    color: #fff;
+    font-size: 28px;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Modal Styles */
+.modal-xl {
+    max-width: 70%;
+}
+
+.modal-content {
+    background: #292929;
+    border: none;
+    border-radius: 12px;
+}
+
+.modal-header {
+    padding: 20px 30px;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-img {
+    /*max-height: 80vh;
+    */
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-close:hover {
+    background-color: #f8f9fa;
+    transform: rotate(90deg);
+}

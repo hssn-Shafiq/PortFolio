@@ -54,7 +54,7 @@ const TestimonialSlider = () => {
                 className="testimonial-img rounded-circle w-25"
                 alt="Saul Goodman"
               />
-              <h3>Saul Goodman</h3>
+              <h3>Tahir Farooq</h3>
               <h4>Ceo &amp; Founder</h4>
             </div>
           </SwiperSlide>
@@ -88,12 +88,12 @@ const TestimonialSlider = () => {
                 <i className="bi bi-quote quote-icon-right"></i>
               </p>
               <img
-                src="/images/testimonials/testimonials-3.jpg"
+                src="/images/testimonials/testimonials-3.webp"
                 className="testimonial-img rounded-circle w-25"
                 alt="Jena Karlis"
               />
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
+              <h3>Maahi Iqbal</h3>
+              <h4>Agency Owner</h4>
             </div>
           </SwiperSlide>
 
@@ -111,7 +111,7 @@ const TestimonialSlider = () => {
                 className="testimonial-img rounded-circle w-25"
                 alt="Matt Brandon"
               />
-              <h3>Matt Brandon</h3>
+              <h3>Ahmad Qasim</h3>
               <h4>Freelancer</h4>
             </div>
           </SwiperSlide>

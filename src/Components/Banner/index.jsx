@@ -30,7 +30,7 @@ function Banner() {
     <>
       {/* Hero Section */}
       <section id="hero" className="hero section dark-background">
-        <img src="/images/Home.webp" alt="" data-aos="fade-in" />
+        <img src="/images/home-banner.png" alt="" data-aos="fade-in" />
         <div className="container" data-aos="zoom-out" data-aos-delay={100}>
           <h2>Hassan Shafiq</h2>
           <p>
