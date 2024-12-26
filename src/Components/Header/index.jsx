@@ -50,26 +50,30 @@ export const Header = () => {
 
     document.querySelectorAll("#navmenu a").forEach((navmenu) => {
       navmenu.addEventListener("click", () => {
-        if (document.querySelector("body").classList.contains("mobile-nav-active")) {
+        if (
+          document.querySelector("body").classList.contains("mobile-nav-active")
+        ) {
           mobileNavToogle();
         }
       });
     });
 
-    document.querySelectorAll(".navmenu .toggle-dropdown").forEach((navmenu) => {
-      navmenu.addEventListener("click", function (e) {
-        e.preventDefault();
-        const parent = this.parentNode;
-        if (parent) {
-          parent.classList.toggle("active");
-          const nextSibling = parent.nextElementSibling;
-          if (nextSibling) {
-            nextSibling.classList.toggle("dropdown-active");
+    document
+      .querySelectorAll(".navmenu .toggle-dropdown")
+      .forEach((navmenu) => {
+        navmenu.addEventListener("click", function (e) {
+          e.preventDefault();
+          const parent = this.parentNode;
+          if (parent) {
+            parent.classList.toggle("active");
+            const nextSibling = parent.nextElementSibling;
+            if (nextSibling) {
+              nextSibling.classList.toggle("dropdown-active");
+            }
           }
-        }
-        e.stopImmediatePropagation();
+          e.stopImmediatePropagation();
+        });
       });
-    });
 
     return () => {
       if (mobileNavToggleBtn) {
@@ -78,9 +82,11 @@ export const Header = () => {
       document.querySelectorAll("#navmenu a").forEach((navmenu) => {
         navmenu.removeEventListener("click", mobileNavToogle);
       });
-      document.querySelectorAll(".navmenu .toggle-dropdown").forEach((navmenu) => {
-        navmenu.removeEventListener("click", mobileNavToogle);
-      });
+      document
+        .querySelectorAll(".navmenu .toggle-dropdown")
+        .forEach((navmenu) => {
+          navmenu.removeEventListener("click", mobileNavToogle);
+        });
     };
   }, []);
 
@@ -89,7 +95,10 @@ export const Header = () => {
 
   return (
     <>
-      <header id="header" className="header d-flex align-items-center fixed-top">
+      <header
+        id="header"
+        className="header d-flex align-items-center fixed-top"
+      >
         <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
           <a href="/" className="logo d-flex align-items-center">
             <h1 className="sitename">Your Developer</h1>
@@ -97,10 +106,7 @@ export const Header = () => {
           <nav id="navmenu" className="navmenu">
             <ul>
               <li>
-                <a
-                  href="/"
-                  className={isActiveLink("/") ? "active" : ""}
-                >
+                <a href="/" className={isActiveLink("/") ? "active" : ""}>
                   Home
                 </a>
               </li>
@@ -137,12 +143,14 @@ export const Header = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="/contact"
-                  className={isActiveLink("/contact") ? "active" : ""}
-                >
-                  Contact
-                </a>
+                <button className="btn btn-primary custom_btn ">
+                  <a
+                    href="/contact"
+                    className={isActiveLink("/contact") ? "active" : ""}
+                  >
+                    Request a Free Quote <i className="bi bi-arrow-up-right-circle"></i>
+                  </a>
+                </button>
               </li>
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
