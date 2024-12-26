@@ -26,7 +26,7 @@
   /* The default color of the main navmenu links */
   --nav-hover-color: #18d26e;
   /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #1a1a1a;
+  --nav-mobile-background-color: #292929;
   /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #1a1a1a;
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -755,25 +755,31 @@ section,
     font-size: 20px;
   }
 }
-@media (max-width: 560px){
-  .hero{
+
+@media (max-width: 560px) {
+  .hero {
     min-height: 50vh;
   }
-  .hero img{
+
+  .hero img {
     object-position: right;
   }
-  .hero .container{
+
+  .hero .container {
     top: 89px;
   }
+
   .hero .social-links {
     margin-top: 20px;
     margin-bottom: 25px;
+  }
+
+  .hero .social-links a {
+    height: 20px;
+    width: 40px;
+  }
 }
-.hero .social-links a{
-  height: 20px;
-  width: 40px;
-}
-}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -804,19 +810,34 @@ section,
   line-height: 0;
 }
 
-.clients-logos{
+.clients-logos {
   aspect-ratio: 3/2;
   object-fit: contain;
   padding: 0px !important;
   transition: all 0.5s ease-in-out;
   filter: grayscale(100%);
 }
-.clients-logos-row{
-  padding: 0px !important;
+
+.clients-logos-row {
   justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  .clients-logos-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    column-gap: 5px;
+  }
+  .hero .social-links a {
+    width: 25px;
+    height: 25px !important;
+    margin-right: 10px;
+  }
 
 }
-.clients-logo-box{
+
+.clients-logo-box {
   text-align: center;
   border: 1px solid #ffffff0e;
   border-radius: 10px;
@@ -825,10 +846,11 @@ section,
 
 }
 
-.clients-logos:hover{
+.clients-logos:hover {
   cursor: pointer;
   filter: grayscale(0%);
-  }
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/

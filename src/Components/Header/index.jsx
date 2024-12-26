@@ -143,12 +143,23 @@ export const Header = () => {
                 </a>
               </li>
               <li>
-                <button className="btn btn-primary custom_btn ">
+                <a
+                  href="/contact"
+                  className={
+                    isActiveLink("/contact")
+                      ? "active  d-block d-md-none"
+                      : " d-block d-md-none"
+                  }
+                >
+                  Contact Me
+                </a>
+                <button className="btn btn-primary custom_btn  d-none d-md-block">
                   <a
                     href="/contact"
                     className={isActiveLink("/contact") ? "active" : ""}
                   >
-                    Request a Free Quote <i className="bi bi-arrow-up-right-circle"></i>
+                    Request a Free Quote{" "}
+                    <i className="bi bi-arrow-up-right-circle"></i>
                   </a>
                 </button>
               </li>
