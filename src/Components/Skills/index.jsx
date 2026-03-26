@@ -53,6 +53,7 @@ function Skills() {
   const ref = useRef(null);
 
   useEffect(() => {
+    const node = ref.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -63,8 +64,8 @@ function Skills() {
       },
       { threshold: 0.3 }
     );
-    if (ref.current) observer.observe(ref.current);
-    return () => { if (ref.current) observer.unobserve(ref.current); };
+    if (node) observer.observe(node);
+    return () => { if (node) observer.unobserve(node); };
   }, [animated]);
 
   return (

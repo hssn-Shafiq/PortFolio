@@ -33,14 +33,15 @@ function Stats() {
   const ref = useRef(null);
 
   useEffect(() => {
+    const node = ref.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => { if (e.isIntersecting) setAnimated(true); });
       },
       { threshold: 0.4 }
     );
-    if (ref.current) observer.observe(ref.current);
-    return () => { if (ref.current) observer.unobserve(ref.current); };
+    if (node) observer.observe(node);
+    return () => { if (node) observer.unobserve(node); };
   }, []);
 
   return (
