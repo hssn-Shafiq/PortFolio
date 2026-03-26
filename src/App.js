@@ -1,4 +1,4 @@
-import { Header } from "./Components/Header";
+
 import "./index.css"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'aos/dist/aos.css';

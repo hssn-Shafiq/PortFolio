@@ -1,75 +1,65 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const STATS = [
+  { icon: "bi-emoji-smile", end: 50, label: "Happy Clients" },
+  { icon: "bi-journal-richtext", end: 30, label: "Projects" },
+  { icon: "bi-headset", end: 700, label: "Hours Of Support" },
+  { icon: "bi-people", end: 15, label: "Hard Workers" },
+];
+
+function AnimatedNumber({ end, animate }) {
+  const [current, setCurrent] = useState(0);
+  useEffect(() => {
+    if (!animate) return;
+    let start = 0;
+    const duration = 1500;
+    const step = end / (duration / 16);
+    const interval = setInterval(() => {
+      start += step;
+      if (start >= end) {
+        setCurrent(end);
+        clearInterval(interval);
+      } else {
+        setCurrent(Math.floor(start));
+      }
+    }, 16);
+    return () => clearInterval(interval);
+  }, [animate, end]);
+  return <span className="stats-card-number">{current}+</span>;
+}
 
 function Stats() {
+  const [animated, setAnimated] = useState(false);
+  const ref = useRef(null);
+
   useEffect(() => {
-    // PureCounter is automatically initialized by the script from the CDN
-    if (window.PureCounter) {
-      new window.PureCounter();
-    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) setAnimated(true); });
+      },
+      { threshold: 0.4 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => { if (ref.current) observer.unobserve(ref.current); };
   }, []);
 
   return (
     <>
-      {/* Stats Section */}
-      <section id="stats" className="stats section">
+      <section id="stats" className="stats section" ref={ref}>
         <div className="container" data-aos="fade-up" data-aos-delay={100}>
           <div className="row gy-4">
-            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-              <i className="bi bi-emoji-smile" />
-              <div className="stats-item">
-                <span
-                  data-purecounter-start={0}
-                  data-purecounter-end={50}
-                  data-purecounter-duration={1}
-                  className="purecounter"
-                />
-                <p>Happy Clients</p>
+            {STATS.map((stat) => (
+              <div key={stat.label} className="col-lg-3 col-md-6">
+                <div className="stats-card">
+                  <i className={`bi ${stat.icon} stats-card-icon`} />
+                  <AnimatedNumber end={stat.end} animate={animated} />
+                  <p className="stats-card-label">{stat.label}</p>
+                </div>
               </div>
-            </div>
-            {/* End Stats Item */}
-            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-              <i className="bi bi-journal-richtext" />
-              <div className="stats-item">
-                <span
-                  data-purecounter-start={0}
-                  data-purecounter-end={30}
-                  data-purecounter-duration={1}
-                  className="purecounter"
-                />
-                <p>Projects</p>
-              </div>
-            </div>
-            {/* End Stats Item */}
-            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-              <i className="bi bi-headset" />
-              <div className="stats-item">
-                <span
-                  data-purecounter-start={0}
-                  data-purecounter-end={700}
-                  data-purecounter-duration={1}
-                  className="purecounter"
-                />
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-            {/* End Stats Item */}
-            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-              <i className="bi bi-people" />
-              <div className="stats-item">
-                <span
-                  data-purecounter-start={0}
-                  data-purecounter-end={15}
-                  data-purecounter-duration={1}
-                  className="purecounter"
-                />
-                <p>Hard Workers</p>
-              </div>
-            </div>
-            {/* End Stats Item */}
+            ))}
           </div>
         </div>
       </section>
-      {/* /Stats Section */}
     </>
   );
 }
