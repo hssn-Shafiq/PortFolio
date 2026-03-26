@@ -20,7 +20,7 @@ export const db = getFirestore(app);
 export const SubmitForm = async (collectionName, data) => {
 
     try {
-        const _docRef = await addDoc(collection(db, collectionName), data);
+        await addDoc(collection(db, collectionName), data);
         console.log("Data submitted successfully");
     } catch (error) {
      console.log("error while submitting", error.message);   
