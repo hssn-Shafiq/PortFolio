@@ -18,7 +18,14 @@ const SKILLS = [
   { name: "WebFlow", pct: 85 },
   { name: "Wix", pct: 80 },
   { name: "Vite JS", pct: 70 },
+  // Mobile App Skills
+  { name: "React Native", pct: 75 },
+  { name: "Android Studio", pct: 70 },
+  { name: "Flutter", pct: 65 },
+  { name: "Kotlin", pct: 60 },
+  { name: "App UI Design", pct: 80 },
 ];
+
 
 const CIRCUMFERENCE = 2 * Math.PI * 26; // r=26
 

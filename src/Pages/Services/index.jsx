@@ -14,6 +14,11 @@ const SERVICES = [
     desc: "Delivering intuitive and engaging designs that provide seamless user experiences for your digital platforms.",
   },
   {
+    icon: "bi-phone",
+    title: "Mobile Application Development",
+    desc: "Build sleek, high-performance Android & cross-platform mobile apps using React Native, Flutter, and Kotlin — from ecommerce to delivery and travel apps.",
+  },
+  {
     icon: "bi-wordpress",
     title: "CMS Development",
     desc: "Expertly crafted CMS-based applications using WordPress, Wix, and other leading platforms.",
@@ -38,6 +43,7 @@ const SERVICES = [
     title: "API Development",
     desc: "Build scalable APIs to integrate various platforms, ensuring seamless data exchange across applications.",
   },
+  
   {
     icon: "bi-book",
     title: "University Projects",

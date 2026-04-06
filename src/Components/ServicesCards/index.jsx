@@ -1,6 +1,7 @@
 const SERVICES_LIST = [
   { icon: "bi-laptop", color: "#ffbb2c", title: "Web Designing" },
   { icon: "bi-layers", color: "#5578ff", title: "UI/UX Designing" },
+  { icon: "bi-phone", color: "#00c853", title: "Android Apps" },
   { icon: "bi-megaphone", color: "#18d26e", title: "Digital Marketing" },
   { icon: "bi-code-slash", color: "#e361ff", title: "MERN Stack" },
   { icon: "bi-filetype-jsx", color: "#47aeff", title: "React Projects" },
@@ -11,6 +12,7 @@ const SERVICES_LIST = [
   { icon: "bi-link", color: "#b20969", title: "REST APIs" },
   { icon: "bi-activity", color: "#ff5828", title: "SEO" },
   { icon: "bi-share", color: "#18d26e", title: "Collaboration" },
+  { icon: "bi-phone-vibrate", color: "#00e5ff", title: "React Native" },
 ];
 
 function ServicesCard() {
