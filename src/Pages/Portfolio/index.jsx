@@ -28,6 +28,11 @@ const PROJECTS = [
   { id: 18, filter: "shopify", title: "Fitted Fresh", img: "/images/portfolio/shopify/sp1.png", category: "E-Commerce" },
   { id: 19, filter: "shopify", title: "Katies Brand", img: "/images/portfolio/shopify/sp3.png", category: "E-Commerce" },
   { id: 20, filter: "shopify", title: "Young 90 Store", img: "/images/portfolio/shopify/sp4.png", category: "E-Commerce" },
+  // Android Apps
+  { id: 21, filter: "android", title: "StyleHub – Clothes Store", img: "/images/portfolio/android/app1.png", category: "Android App" },
+  { id: 22, filter: "android", title: "WanderBooking – Travel & Stays", img: "/images/portfolio/android/app2.png", category: "Android App" },
+  { id: 23, filter: "android", title: "SwiftDeliver – Order Delivery", img: "/images/portfolio/android/app3.png", category: "Android App" },
+  { id: 24, filter: "android", title: "SoleStyle – Shoes Brand", img: "/images/portfolio/android/app4.png", category: "Android App" },
 ];
 
 const FILTERS = [
@@ -35,6 +40,7 @@ const FILTERS = [
   { label: "Web Development", value: "web" },
   { label: "CMS Development", value: "wordpress" },
   { label: "E-commerce", value: "shopify" },
+  { label: "Mobile Applications", value: "android" },
 ];
 
 function Portfolio() {
@@ -73,8 +79,8 @@ function Portfolio() {
             {/* Grid */}
             <div className="row g-4">
               {visible.map((project, i) => (
-                <div key={project.id} className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={50 * (i % 6)}>
-                  <div className="portfolio-card">
+                <div key={project.id} className={`col-lg-4 col-md-6 ${project.filter === "android" ? "col-lg-3 col-md-6" : ""}`} data-aos="fade-up" data-aos-delay={50 * (i % 6)}>
+                  <div className={`portfolio-card ${project.filter === "android" ? "android-card" : ""}`}>
                     <span className="portfolio-card-category">{project.category}</span>
                     <img src={project.img} alt={project.title} />
                     <div className="portfolio-card-overlay">
