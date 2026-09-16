@@ -3,11 +3,11 @@ import Typed from 'typed.js';
 import ThreeBackground from '../ThreeBackground';
 
 const BADGES = [
-  'Web Application',
-  'Mobile Application',
-  'Web Design',
+  'Website Development',
+  'Business Website Development',
+  'Web Designing',
+  'Custom Website Development',
   'WordPress Development',
-  'UI/UX Design',
   'Shopify Development',
 ];
 
@@ -153,7 +153,7 @@ function Banner() {
                 />
                 {/* Floating experience badge */}
                 <div className="hero-exp-badge">
-                  <span className="hero-exp-number">5+</span>
+                  <span className="hero-exp-number">2+</span>
                   <span className="hero-exp-label">Years Exp.</span>
                 </div>
                 {/* Floating projects badge */}

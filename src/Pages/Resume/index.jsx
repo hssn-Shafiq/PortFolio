@@ -22,9 +22,10 @@ function Resume() {
                 <div className="timeline-item">
                   <h4>Hassan Shafiq</h4>
                   <p style={{ fontStyle: 'italic', color: 'rgba(250,250,250,0.7)', fontSize: 14 }}>
-                    Passionate Full-Stack Web Developer, creating robust and scalable web applications.
-                    Skilled in front-end and back-end technologies, with a keen eye for user experience
-                    and performance optimization.
+                    Full Stack Developer (MERN) with 2+ years of experience building and deploying web applications across SaaS, eCommerce, CRM, CMS,
+                    marketplace, and automation platforms. Experienced in frontend architecture, backend API development, database optimization, cloud
+                    deployment, payment integrations, and workflow automation. Proven ability to deliver production-ready solutions in startup, agency,
+                    freelance, and remote environments
                   </p>
                   <ul>
                     <li>Rahim Yar Khan, Pakistan</li>
@@ -36,13 +37,12 @@ function Resume() {
                 <h3 className="resume-title" style={{ marginTop: 32 }}>Education</h3>
                 <div className="timeline-item">
                   <span className="timeline-date-badge">
-                    <i className="bi bi-calendar3" /> 2021 – Present
+                    <i className="bi bi-calendar3" /> 2021 – 2025
                   </span>
                   <h4>Bachelor of Software Engineering</h4>
                   <h5>Islamia University of Bahawalpur, Punjab, Pakistan</h5>
                   <ul>
-                    <li>Currently pursuing BSE — enrolled in final year.</li>
-                    <li>Expected graduation mid-2025.</li>
+                    <li>Graduated in 2025.</li>
                   </ul>
                 </div>
                 <div className="timeline-item">
@@ -63,40 +63,58 @@ function Resume() {
 
                 <div className="timeline-item">
                   <span className="timeline-date-badge">
-                    <i className="bi bi-calendar3" /> Jul 2024 – Present
+                    <i className="bi bi-calendar3" /> Jan 2024 – Present
                   </span>
                   <h4>CMS &amp; Full Stack Developer</h4>
                   <h5>Groom Your Life Agency, Karachi (Remote)</h5>
                   <ul>
-                    <li>Serving as CMS &amp; Full Stack Developer — building production-grade web apps.</li>
-                    <li>Working across WordPress, Shopify, Wix, and custom stacks.</li>
-                    <li>Collaborating with industry experts to turn innovative ideas into reality.</li>
+                    <li>Delivered 12+ web applications and eCommerce solutions for clients across multiple industries, managing the complete development lifecycle from requirement gathering to production deployment.</li>
+                    <li>Developed responsive frontend applications using React.js, Next.js, JavaScript, and Tailwind CSS.</li>
+                    <li>Built and integrated RESTful APIs using Node.js and Express.js, supporting authentication, payment gateways, and third-party services</li>
+                    <li>Managed application deployment, domain configuration, and CI/CD pipelines on DigitalOcean and cloud hosting platforms</li>
                   </ul>
                 </div>
 
                 <div className="timeline-item">
                   <span className="timeline-date-badge">
-                    <i className="bi bi-calendar3" /> Sep 2023 – Jun 2024
+                    <i className="bi bi-calendar3" /> Aug 2025 – Apr 2026
                   </span>
                   <h4>Full Stack Developer</h4>
-                  <h5>Codesinc Software House, Rahim Yar Khan</h5>
+                  <h5>Fogsly Pvt Limited, Islamabad (Remote)</h5>
                   <ul>
-                    <li>Led design, development, and implementation of multiple modules, REST APIs &amp; Cloud Services.</li>
-                    <li>Delegated tasks to a 7-member design team.</li>
-                    <li>Supervised code quality reviews and managed project budgets ($2,000–$25,000).</li>
+                    <li>Architected and developed core modules of the Fogsly ecosystem, a multi-service platform serving freelancers and digital service
+                      providers.</li>
+                    <li>Built a reward-based freelance marketplace with job posting, bid management, and digital services features, increasing platform
+                      engagement by 40%.</li>
+                    <li>Designed and integrated secure REST APIs with JWT authentication, role-based access control, and optimized MongoDB schemas for
+                      high-throughput data.</li>
+                    <li>Managed cloud deployment on Firebase Hosting, ensuring 99.9% production uptime.</li>
                   </ul>
                 </div>
 
                 <div className="timeline-item">
                   <span className="timeline-date-badge">
-                    <i className="bi bi-calendar3" /> Dec 2021 – Jun 2023
+                    <i className="bi bi-calendar3" /> May 2024 – Dec 2024
                   </span>
-                  <h4>Front-End &amp; WordPress Developer</h4>
+                  <h4>Full Stack Developer</h4>
+                  <h5>Beconseil, Switzerland </h5>
+                  <ul>
+                    <li>Led end-to-end development of 3+ eCommerce websites, managing everything from UI design to backend API integration and go-live deployment.</li>
+                    <li>Integrated multiple payment gateways (Stripe, PayPal) with secure checkout flows, reducing cart abandonment through streamlined UX.</li>
+                    <li>Developed responsive, cross-device compatible UIs using React.js and Tailwind CSS, achieving consistent performance across all major browsers.</li>
+                  </ul>
+                </div>
+
+                <div className="timeline-item">
+                  <span className="timeline-date-badge">
+                    <i className="bi bi-calendar3" /> Jan 2023 – May 2024
+                  </span>
+                  <h4>Front-End &amp; Full Stack Developer</h4>
                   <h5>Codesinc Software House, Rahim Yar Khan</h5>
                   <ul>
-                    <li>Created front-end designs: portfolios, agencies, travel sites &amp; more.</li>
-                    <li>Managed up to 5 parallel projects under deadline pressure.</li>
-                    <li>Created 4+ design presentations and proposals per month.</li>
+                    <li>Joined as a Frontend Intern and progressed rapidly through three promotions to Full Stack Developer within 1 years</li>
+                    <li>Built interactive frontend interfaces using React.js and Angular.js, and integrated REST APIs for dynamic data rendering</li>
+                    <li>Contributed to full-stack features across team-based projects, including user authentication, dashboard modules, and CMS components.</li>
                   </ul>
                 </div>
               </div>

@@ -1,18 +1,31 @@
 const SERVICES_LIST = [
-  { icon: "bi-laptop", color: "#ffbb2c", title: "Web Designing" },
-  { icon: "bi-layers", color: "#5578ff", title: "UI/UX Designing" },
-  { icon: "bi-phone", color: "#00c853", title: "Android Apps" },
-  { icon: "bi-megaphone", color: "#18d26e", title: "Digital Marketing" },
-  { icon: "bi-code-slash", color: "#e361ff", title: "MERN Stack" },
-  { icon: "bi-filetype-jsx", color: "#47aeff", title: "React Projects" },
-  { icon: "bi-braces", color: "#ffa76e", title: "Uni Projects" },
-  { icon: "bi-code", color: "#e361ff", title: "Programming" },
-  { icon: "bi-wordpress", color: "#0095ff", title: "WordPress" },
-  { icon: "bi-shop", color: "#b2904f", title: "Shopify Stores" },
-  { icon: "bi-link", color: "#b20969", title: "REST APIs" },
-  { icon: "bi-activity", color: "#ff5828", title: "SEO" },
-  { icon: "bi-share", color: "#18d26e", title: "Collaboration" },
-  { icon: "bi-phone-vibrate", color: "#00e5ff", title: "React Native" },
+  { icon: "bi-window", color: "#ffbb2c", title: "Web Development" },
+
+{ icon: "bi-code-slash", color: "#5578ff", title: "MERN Stack Development" },
+
+{ icon: "bi-filetype-jsx", color: "#00c853", title: "React & Next.js" },
+
+{ icon: "bi-wordpress", color: "#0095ff", title: "WordPress Development" },
+
+{ icon: "bi-cart3", color: "#b2904f", title: "E-commerce Development" },
+
+{ icon: "bi-shop", color: "#ff5828", title: "Shopify Stores" },
+
+{ icon: "bi-database", color: "#18d26e", title: "Backend Development" },
+
+{ icon: "bi-link-45deg", color: "#b20969", title: "REST API Development" },
+
+{ icon: "bi-cloud-check", color: "#47aeff", title: "Firebase Integration" },
+
+{ icon: "bi-diagram-3", color: "#e361ff", title: "Custom Web Applications" },
+
+{ icon: "bi-speedometer2", color: "#ffa76e", title: "Website Optimization" },
+
+{ icon: "bi-robot", color: "#00e5ff", title: "AI-Powered Development" },
+
+{ icon: "bi-cart-check", color: "#5578ff", title: "WooCommerce" },
+
+{ icon: "bi-phone", color: "#18d26e", title: "Responsive Websites" },
 ];
 
 function ServicesCard() {

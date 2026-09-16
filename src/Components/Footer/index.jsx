@@ -12,7 +12,7 @@ function Footer() {
           </div>
 
           <p className="footer-tagline">
-            Full Stack Developer &amp; Digital Marketer — Bridging Creativity and Code.
+            Full Stack Developer &amp; AI powered Development | From Idea to Deployment.
           </p>
 
           <div className="social-links d-flex justify-content-center">
@@ -33,7 +33,7 @@ function Footer() {
           </div>
 
           <div className="copyright">
-            <span>© 2025</span>{" "}
+            <span>© 2026</span>{" "}
             <strong className="px-1 sitename">Hassan Shafiq</strong>{" "}
             <span>— All Rights Reserved</span>
           </div>

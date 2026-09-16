@@ -7,7 +7,7 @@ function AboutSec() {
           <div className="row gy-4 justify-content-center">
             <div className="col-lg-4 d-flex justify-content-center">
               <div className="about-profile-wrapper">
-                <div className="about-glow-ring" />
+  
                 <img src="/images/profile.png" className="about-profile-img img-fluid" alt="Hassan Shafiq" />
               </div>
             </div>

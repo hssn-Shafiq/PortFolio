@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const STATS = [
-  { icon: "bi-emoji-smile", end: 50, label: "Happy Clients" },
-  { icon: "bi-journal-richtext", end: 30, label: "Projects" },
+  { icon: "bi-emoji-smile", end: 30, label: "Happy Clients" },
+  { icon: "bi-journal-richtext", end: 20, label: "Projects" },
   { icon: "bi-headset", end: 700, label: "Hours Of Support" },
-  { icon: "bi-people", end: 15, label: "Hard Workers" },
+  { icon: "bi-people", end: 5, label: "Hard Workers" },
 ];
 
 function AnimatedNumber({ end, animate }) {
